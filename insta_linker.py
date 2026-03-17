@@ -41,12 +41,14 @@ from telegram.ext import (
 #  CONFIGURATION (your values – unchanged)
 # ══════════════════════════════════════════════════════════════════════════════
 
+from dotenv import load_dotenv
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")   # 🔐 get from Render ENV
-COOKIE_FILE = "cookies.txt"          # 📁 local file in repo
-COOKIE_FILE         = r"C:\Users\asus\Downloads\www_instagram_com_cookies.txt"
-PRIVATE_LOG_CHANNEL = "-1003867791896"
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+COOKIE_FILE = os.getenv("COOKIE_FILE", "cookies.txt")
+PRIVATE_LOG_CHANNEL = os.getenv("PRIVATE_LOG_CHANNEL")
 SESSION_DIR         = "./ig_sessions"
 DELAY_MIN           = 1.5
 DELAY_MAX           = 3.5
