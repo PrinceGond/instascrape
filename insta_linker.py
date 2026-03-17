@@ -717,6 +717,9 @@ async def h_receive_end(update: Update, ctx: ContextTypes.DEFAULT_TYPE) -> int:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
+    def main():
+    if not BOT_TOKEN:
+        raise ValueError("❌ BOT_TOKEN not found in environment variables!")
     log.info("━" * 47)
     log.info("  Instagram Post Extractor Bot v4")
     log.info("  Cookies : %s", COOKIE_FILE)
