@@ -40,8 +40,6 @@ from telegram.ext import (
 from dotenv import load_dotenv
 
 load_dotenv()
-)
-
 # ══════════════════════════════════════════════════════════════════════════════
 #  CONFIGURATION (your values – unchanged)
 # ══════════════════════════════════════════════════════════════════════════════
