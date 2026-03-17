@@ -41,8 +41,10 @@ from telegram.ext import (
 #  CONFIGURATION (your values – unchanged)
 # ══════════════════════════════════════════════════════════════════════════════
 
-BOT_TOKEN           = "8689278721:AAHj7S0U0o65obtiRNmEb03W7sebGVDSllE"
-IG_USERNAME         = "golangoverlord"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")   # 🔐 get from Render ENV
+COOKIE_FILE = "cookies.txt"          # 📁 local file in repo
 COOKIE_FILE         = r"C:\Users\asus\Downloads\www_instagram_com_cookies.txt"
 PRIVATE_LOG_CHANNEL = "-1003867791896"
 SESSION_DIR         = "./ig_sessions"
