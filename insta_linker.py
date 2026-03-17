@@ -722,9 +722,9 @@ async def h_receive_end(update: Update, ctx: ContextTypes.DEFAULT_TYPE) -> int:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    def main():
     if not BOT_TOKEN:
         raise ValueError("❌ BOT_TOKEN not found in environment variables!")
+
     log.info("━" * 47)
     log.info("  Instagram Post Extractor Bot v4")
     log.info("  Cookies : %s", COOKIE_FILE)
@@ -743,12 +743,14 @@ def main():
         fallbacks=[CommandHandler("cancel", h_cancel)],
         allow_reentry=True,
     )
+
     _app.add_handler(conv)
     _app.add_handler(CommandHandler("help", h_help))
     _app.add_handler(CommandHandler("check", h_check))
 
     log.info("Bot is polling. Ctrl+C to stop.")
     _app.run_polling(drop_pending_updates=True)
+
 
 if __name__ == "__main__":
     main()
