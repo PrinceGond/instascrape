@@ -41,8 +41,8 @@ from telegram.ext import (
 #  CONFIGURATION (your values – unchanged)
 # ══════════════════════════════════════════════════════════════════════════════
 
-BOT_TOKEN           = "8701065218:AAEqEESSJPPPavVdPSxj_XjODS1kEPbaxFs"
-IG_USERNAME         = "your_instagram_username"
+BOT_TOKEN           = "8689278721:AAHj7S0U0o65obtiRNmEb03W7sebGVDSllE"
+IG_USERNAME         = "golangoverlord"
 COOKIE_FILE         = r"C:\Users\asus\Downloads\www_instagram_com_cookies.txt"
 PRIVATE_LOG_CHANNEL = "-1003867791896"
 SESSION_DIR         = "./ig_sessions"
